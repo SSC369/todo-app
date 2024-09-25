@@ -76,6 +76,7 @@ const Profile = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      setLoading(true);
       const { username, email, password } = formData;
       if (handleValidation()) {
         const url = import.meta.env.VITE_BACKEND_URL + "/api/auth/edit-profile";
@@ -102,6 +103,8 @@ const Profile = () => {
       }
     } catch (error) {
       toast.error(error.response.data.message, { duration: 1000 });
+    } finally {
+      setLoading(false);
     }
   };
 
