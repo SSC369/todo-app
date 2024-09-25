@@ -19,7 +19,10 @@ const Header = () => {
 
   return (
     <div className="flex items-center justify-between w-full h-16 p-4 bg-gray-900 text-white">
-      <h1 onClick={() => navigate("/")} className="flex items-center gap-2">
+      <h1
+        onClick={() => navigate("/")}
+        className="flex items-center gap-2 cursor-pointer"
+      >
         <FaReact fontSize={24} />
         <p className="text-lg font-medium">Todo</p>
       </h1>

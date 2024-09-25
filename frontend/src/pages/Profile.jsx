@@ -208,7 +208,7 @@ const Profile = () => {
 
             <button
               type="submit"
-              className="flex justify-center items-center mt-5 mb-2 bg-purple-800 text-white font-medium text-sm rounded-lg h-12 w-full transition hover:bg-purple-600"
+              className="flex justify-center items-center mt-5 mb-2 bg-slate-950 text-white font-medium text-sm rounded-2xl h-12 w-full transition hover:bg-slate-900"
             >
               {loading ? (
                 <TailSpin
